@@ -9,8 +9,8 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
-            pathType: ImplementationSpecific
+          - pathType: Prefix
+            path: /blue(/|$)(.*)
             backend:
               service:
                 name: todoapp-service
