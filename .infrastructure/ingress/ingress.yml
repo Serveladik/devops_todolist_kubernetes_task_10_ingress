@@ -9,7 +9,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /blue(.*)
+          - path: /
             pathType: ImplementationSpecific
             backend:
               service:
